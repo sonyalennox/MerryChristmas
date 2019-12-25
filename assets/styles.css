@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: navy;
+   overflow: hidden;
+
+}
+h1{
+  position: absolute;
+  color: green;
+  width: 100vw;
+  margin-left: calc(25% - 15vw);
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 3rem;
+  animation: tree 2s linear alternate infinite;
+}
+.all {
+  
+    width: 100vw;
+    height: 100vh;
+    background: url('https://zapodaj.net/images/d53756886541f.png');
+    z-index: 1;
+    animation: snow 7.5s linear infinite;
+}
+
+.container {
+    margin-top: 30vh;
+    width: 50vw;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: -1;
+
+
+}
+
+.wood {
+    background: #624a2e;
+    width: 10vh;
+    height: 15vh;
+    position: absolute;
+    left: calc(50% - 5vh);
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: -1;
+}
+
+.bot {
+    width: 20vw;
+    height: 40vh;
+    position: absolute;
+    left: calc(50% - 15vw);
+    border-left: 5vw solid transparent;
+    border-right: 5vw solid transparent;
+    border-bottom: 15vh solid green;
+    z-index: -1;
+}
+
+.mid {
+    width: 15vw;
+    height: 25vh;
+    position: absolute;
+    left: calc(50% - 12.5vw);
+    bottom: 30vh;
+    border-left: 5vw solid transparent;
+    border-right: 5vw solid transparent;
+    border-bottom: 15vh solid green;
+    z-index: -1;
+
+}
+
+.top {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: calc(50% - 10vw);
+    bottom: calc(0px + 45vh);
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 25vh solid green;
+    z-index: 0;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 500px, 100px 200px, -100px 150px;
+    }
+}
+
+.red,
+.blue,
+.yellow {
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.red {
+    background: red;
+    animation: bombred 2s linear alternate infinite;
+}
+
+.red:nth-child(1) {
+    left: 35%;
+    bottom: 50%;
+
+}
+
+.red:nth-child(2) {
+    left: 60%;
+    bottom: 60%;
+
+}
+
+.red:nth-child(3) {
+    left: 63%;
+    bottom: 25%;
+
+}
+
+.red:nth-child(4) {
+    left: 56%;
+    bottom: 76%;
+
+}
+
+.red:nth-child(5) {
+    left: 40%;
+    bottom: 35%;
+
+}
+
+.blue {
+    background: blue;
+    animation: bombblue 3s .2s linear alternate infinite;
+}
+
+.blue:nth-child(1) {
+    left: 50%;
+    bottom: 46%;
+}
+
+.blue:nth-child(2) {
+    left: 50%;
+    bottom: 65%;
+}
+
+.blue:nth-child(3) {
+    left: 30%;
+    bottom: 23%;
+}
+
+.blue:nth-child(4) {
+    left: 40%;
+    bottom: 75%; 
+}
+
+.blue:nth-child(5) {
+    left: 60%;
+    bottom: 37%;
+}
+.yellow {
+    background: salmon;
+    animation: bombyellow 1s .5s linear alternate infinite;
+}
+.yellow:nth-child(1) {
+    left: 50%;
+    bottom: 25%;
+}
+.yellow:nth-child(2) {
+    left: 60%;
+    bottom: 50%;
+}
+.yellow:nth-child(3) {
+    left: 42%;
+    bottom: 58%;
+}
+.yellow:nth-child(4) {
+    left: 48%;
+    bottom: 90%;
+}
+
+@keyframes bombred {
+    0% {
+        box-shadow: 0px 0px 20px 10px red;
+    }
+}
+
+@keyframes bombblue {
+    0% {
+        box-shadow: 0px 0px 20px 10px blue;
+    }
+}
+
+@keyframes bombyellow {
+    0% {
+        box-shadow: 0px 0px 20px 10px yellow;
+    }
+}
+@keyframes tree{
+  0%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: 20px;
+    font-size: 3.1rem;
+    color: aqua;
+  }
+}
